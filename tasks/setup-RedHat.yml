@@ -6,7 +6,7 @@
     state: present
 
 ###
-# TODO: Add disablerepo and replace these..? But they don't persist.
+# TODO: Add disablerepo and replace these..? But they don't persist. Or do they?!
 - name: Check if MySQL 5.6 repo is enabled
   ignore_errors: true
   shell: "yum repolist all | grep mysql56-community | grep enabled"

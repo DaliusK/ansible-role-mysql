@@ -3,8 +3,8 @@
   mysql_db:
     name: "{{ item.name }}"
     state: absent
+  when: (mysql_recreate_databases is defined and mysql_recreate_databases) or (item.recreate is defined and item.recreate)
   with_items: mysql_databases
-  when: mysql_recreate_databases
 
 - name: Ensure MySQL databases are present
   mysql_db:
