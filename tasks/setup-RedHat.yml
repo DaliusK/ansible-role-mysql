@@ -5,7 +5,6 @@
     name: "http://dev.mysql.com/get/mysql57-community-release-el6-7.noarch.rpm"
     state: present
 
-
 ###
 # TODO: Add disablerepo and replace these..? But they don't persist.
 - name: Check if MySQL 5.6 repo is enabled
